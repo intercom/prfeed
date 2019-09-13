@@ -1,0 +1,95 @@
+:root {
+  --black: #222222;
+  --white: #ffffff;
+  --grey: #888888;
+  --medium-grey: #979797;
+  --light-grey: #eeeeee;
+  --blue: #286efa;
+  --dark-blue: #0549d1;
+  --green: #1bb157;
+  --red: #fd3a57;
+  --yellow: #ffb948;
+  --purple: #c701f1;
+}
+
+
+body {
+  background: var(--white);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.baseline {
+  align-items: baseline;
+}
+
+.link {
+  color: var(--blue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--dark-blue);
+}
+
+.button {
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 0;
+  padding: 4px 8px;
+}
+
+.button.o__secondary {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
+}
+
+.button.o__secondary:hover {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button.o__pull-request {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app__manage-teams-button {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.app__error {
+  color: var(--red);
+  margin-top: 10px;
+}
+
+.pull-requests {
+  padding: 0 15px;
+}

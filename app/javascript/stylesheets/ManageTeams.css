@@ -1,0 +1,17 @@
+.manage-teams__h2 {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.manage-teams__home-button {
+  cursor: pointer;
+}
+
+.manage-teams__empty-td {
+  opacity: 0;
+}
+
+.manage-teams__add-team-button {
+  margin-top: 20px;
+  width: fit-content;
+}

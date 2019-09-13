@@ -1,0 +1,20 @@
+.graph__cotaniner {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.graph__cotaniner input ,
+.graph__cotaniner select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-left: 10px;
+  height: 30px;
+  border-radius: 0;
+  background: white;
+}
+
+.graph__cotaniner input {
+  height: 16px;
+}

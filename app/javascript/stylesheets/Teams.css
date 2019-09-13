@@ -1,0 +1,31 @@
+.teams {
+  justify-content: space-between;
+  width: 300px;
+  align-items: baseline;
+  font-size: 12px;
+}
+
+.teams__button {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.teams__button:hover {
+  color: var(--dark-blue);
+}
+
+.teams__select {
+  border: 1px solid var(--medium-grey);
+  background: none;
+  margin-left: 5px;
+}
+
+.teams__select:focus {
+  outline: 0;
+}
+
+@media (max-width: 360px) {
+  .teams__select {
+    max-width: 120px;
+  }
+}
