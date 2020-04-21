@@ -8,7 +8,7 @@ Features include:
 
 ## Setting up
 
-##### Ruby version: `2.4.6`
+##### Ruby version: `2.6.6`
 ##### Rails version: `5.2.3`
 ##### Node version: `7`
 ##### Database: postgresql (don't forget to start up postgres)
