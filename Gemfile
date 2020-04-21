@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.6'
+ruby '2.6.6'
 
 # https://stackoverflow.com/questions/41454333/meaning-of-new-block-git-sourcegithub-in-gemfile
 git_source(:github) do |repo_name|
@@ -17,6 +17,7 @@ gem "mutations"
 gem "octokit", "~> 4.0"
 gem "restpack_serializer", "~> 0.6"
 gem "warden-github-rails", "~> 1.1.0"
+gem "rack", "~> 2.2.2"
 gem "rack-cors", :require => "rack/cors"
 gem "sprockets"
 gem "slack-ruby-client"
