@@ -31,6 +31,10 @@ class SlackNotifier
     add_reaction("requested-changes", pull_request_blurb)
   end
 
+  def self.add_message_comments_added(pull_request_blurb:)
+    add_reaction("commented", pull_request_blurb)
+  end
+
   private_class_method def self.compose_message(pull_request:, bump:)
     message = "#{pull_request.title} `+#{pull_request.line_addition_count} -#{pull_request.line_deletion_count}`: \n" + pull_request.url
     return "*BUMP - this PR is ready for another review* \n" + message if bump

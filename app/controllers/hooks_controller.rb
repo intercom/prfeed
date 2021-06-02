@@ -13,6 +13,7 @@ class HooksController < ApplicationController
       SlackNotifier.add_message_merge_reaction(pull_request_blurb: blurb) if merged?
       SlackNotifier.add_message_review_reaction(pull_request_blurb: blurb) if review_approved?
       SlackNotifier.add_message_requested_changes_reaction(pull_request_blurb: blurb) if review_requested_changes?
+      SlackNotifier.add_message_comments_added(pull_request_blurb: blurb) if comments_added?
     end
 
     head :ok
@@ -86,5 +87,9 @@ class HooksController < ApplicationController
 
   private def review_approved?
     has_review? && review_state == "approved"
+  end
+
+  private def comments_added?
+    has_review? && review_state == "commented"
   end
 end
