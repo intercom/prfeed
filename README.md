@@ -1,5 +1,5 @@
 # PRFeed
-#### Responsible Team: Team Cloud
+#### Responsible Team: Team Builder Tools
 
 This is a Github __pull request feed__ that integrates with Slack. It aims to automate some of the things we do in the code review process (e.g., manual reposting) and improve the visibility of outstanding pull requests.
 
